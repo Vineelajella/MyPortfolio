@@ -10,6 +10,19 @@ body{
     color:white;
     background: rgb(6, 67, 117);
 }
+
+.nav-link {
+    color: white;
+    font-weight: normal;
+    transition: 0.3s;
+}
+
+.nav-link.active {
+    color: aqua;
+    font-weight: bold;
+}
+
+
 .header{
     position: fixed;
     top:0;
@@ -24,6 +37,67 @@ body{
     z-index: 100;
 
 }
+/* Internship Experience Section */
+#experience {
+    background: rgb(6, 67, 117); /* same as body background */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#experience .section-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    color: aqua;
+    animation: sliceTop 1s ease forwards;
+    margin-left: 40%;
+}
+.section-title span {
+    color: white;
+}
+/* Remove subtitle by deleting or not styling .section-subtitle */
+
+.experience-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05); /* Lighter background than before */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    animation: sliceLeft 1s ease forwards;
+}
+
+.experience-box h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.experience-box h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.experience-box h4 span {
+    color: aqua;
+}
+
+.experience-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experience-box ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f0f0f0;
+}
+
 .logo{
     position: relative;
     color:white;
@@ -169,6 +243,8 @@ body{
     line-height: 1.4;
     margin-bottom: 4rem;
     margin-right:2px;
+    text-align: justify;
+    margin-right:50px;
 }
 .hidden-content {
     display: none;
@@ -306,7 +382,10 @@ body{
     0 0 15px cyan
 
 }
-
+.contact-list li box-icon {
+  margin-right: 10px; /* Adjust spacing as needed */
+  vertical-align: middle;
+}
 .container{
     padding:50px;
 }
@@ -932,6 +1011,21 @@ section{
     .More1 {
         font-size: 15px; /* Adjust font size for button */
         padding: 10px 15px; /* Adjust padding for button */
+    }
+}
+@media (max-width: 768px) {
+    #experience .section-title {
+        margin-left: 50px;
+        text-align: center;
+    }
+    .section-title span {
+    color: white;
+}
+
+    .experience-box {
+        margin: 0 auto;
+        text-align: left;
+        padding: 20px;
     }
 }
 
