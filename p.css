@@ -725,10 +725,12 @@ section{
     color:rgb(228,228,228);
     font-size: 20px;
     font-weight: 600;
+    margin-left:20%;
 
 }
 .contact-list{
     margin-bottom: 3rem;
+    margin-left:20%
 }
 .contact-list li{
     margin-bottom: 10px;
@@ -745,6 +747,9 @@ section{
 .contact-list li :hover{
     transform: scale(1.01)translateY(-5px);
     color:aqua;
+}
+.home-sc2{
+    margin-left: 20%
 }
 .home-sc2 a{
     display: inline-flex;
@@ -763,6 +768,7 @@ section{
     animation-delay: calc(.2s * var(-.1));
     transition: .5s ease;
     margin:10px 10px 20px 0;
+    
 }
 .home-sc2 a:hover{
     background: rgb(93, 223, 223);
@@ -961,28 +967,84 @@ section{
         width: 100%;
     }
 }
-/* Media Queries for Responsiveness */
+@media (max-width: 400px) {
+    .contact-text {
+        padding-left: 10px;
+    }
+
+    .contact-text h4 {
+        font-size: 16px;
+    }
+
+    .contact-list li {
+        font-size: 14px;
+        gap: 8px;
+
+    }
+    .contact-list li{
+        margin-right: 200px
+    }
+}
+
+/* Mobile - Max 768px */
 @media (max-width: 768px) {
+    .contact {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contact-text h2 {
+        font-size: 50px;
+    }
+
+    .contact-text h4 {
+        font-size: 18px;
+        
+    }
+
+    .contact-list li {
+        font-size: 16px;
+        margin-left:10px;
+    }
+
+    .home-sc2 {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .home-sc2 a {
+        margin: 8px;
+    }
+
     .contact-form form {
-        margin-top: 30px; /* Reduce top margin on smaller screens */
+        margin-top: 20px;
     }
 
     .contact-form form input,
     .contact-form form textarea {
-        width: 90%; /* Full width on smaller screens */
-        font-size: 0.9rem; /* Slightly smaller font size for mobile */
-    }
-
-    .contact-form textarea {
-        height: 150px; /* Reduce height of textarea for mobile */
-    }
-
-    .contact-form form .send {
-        width: 100%; /* Full width for submit button on mobile */
-        font-size: 14px; /* Smaller font size for submit button */
-        padding: 10px; /* Adjust padding for smaller screens */
+        width: 100%;
     }
 }
+
+/* Tablet - 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 20px;
+    }
+
+    .contact-text h2 {
+        font-size: 60px;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 95%;
+    }
+}
+
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
