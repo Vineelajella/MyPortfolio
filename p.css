@@ -931,6 +931,7 @@ section{
         font-size: 16px;
     }
 
+
     .contact-list {
         display: flex;
         flex-direction: column;
@@ -1044,7 +1045,7 @@ section{
 
     }
     .contact-list i {
-        margin-right: 20%;
+        margin-right: 2%;
     }
 
     .contact-list li {
