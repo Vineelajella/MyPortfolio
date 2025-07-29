@@ -876,6 +876,63 @@ section{
     }
     
 }
+/* General styling for list items */
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Icon spacing */
+.contact-list box-icon {
+    flex-shrink: 0;
+}
+
+/* Mobile - Max 768px */
+@media (max-width: 768px) {
+    .contact {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        text-align: left; /* <-- Important */
+    }
+
+    .contact-text {
+        padding: 0 10px;
+        text-align: left; /* <-- Move text left */
+    }
+
+    .contact-text h2 {
+        font-size: 36px;
+    }
+
+    .contact-text h4 {
+        font-size: 16px;
+    }
+
+    .contact-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+
+    .contact-list li {
+        margin-right: 0;
+    }
+
+    .contact-list box-icon {
+        margin-right: 8px;
+    }
+
+    .home-sc2 {
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+}
+
 /* Media Queries */
 @media (max-width: 1200px) {
     .header {
